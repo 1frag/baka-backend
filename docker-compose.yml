@@ -12,7 +12,7 @@ services:
     depends_on:
       - db
     environment:
-      - PYTHONPATH=.
+      - PYTHONPATH=/src/
 
   db:
     image: postgres:11

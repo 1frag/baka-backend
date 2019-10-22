@@ -1,5 +1,5 @@
 import trafaret as T
-from settings import SETTINGS
+from backend.settings import SETTINGS
 from aiopg.sa import create_engine
 
 

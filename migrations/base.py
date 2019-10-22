@@ -1,7 +1,7 @@
 import asyncio
 
 import sqlalchemy as sa
-from utils import get_engine
+from backend.utils import get_engine
 
 metadata = sa.MetaData()
 

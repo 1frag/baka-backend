@@ -1,7 +1,6 @@
 import aiohttp_jinja2
-from aiohttp import web
 
-import db
+from backend import db
 
 
 @aiohttp_jinja2.template('index.html')

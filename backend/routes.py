@@ -1,9 +1,10 @@
 import pathlib
+import os
 
-from views import index
+from backend.views import index
 
 
-PROJECT_ROOT = pathlib.Path(__file__).parent
+PROJECT_ROOT = pathlib.Path(os.getenv('PYTHONPATH', __file__))
 
 
 def setup_routes(app):
