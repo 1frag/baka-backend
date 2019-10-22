@@ -1,0 +1,7 @@
+aiohttp
+pathlib
+sqlalchemy
+aiopg
+aiohttp_jinja2
+jinja2
+ipython
