@@ -8,7 +8,7 @@ metadata = sa.MetaData()
 
 async def create_table(engine):
     async with engine.acquire() as conn:
-        await conn.execute('drop table e_user;')
+        await conn.execute('drop table if exists e_user;')
         await conn.execute('''
             CREATE TABLE e_user
             (
