@@ -1,0 +1,14 @@
+{
+  "name": "ex-tempore",
+  "description": "Ex-tempore",
+  "repository": "https://git.heroku.com/ex-tempore.git",
+  "keywords": [
+    "python",
+    "asyncio",
+    "aiohttp"
+  ],
+  "success_url": "/",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-python"
+  }
+}
