@@ -5,3 +5,6 @@ aiopg
 aiohttp_jinja2
 jinja2
 ipython
+trafaret
+alembic
+psycopg2
