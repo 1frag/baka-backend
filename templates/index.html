@@ -1,14 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Users</title>
-    <link rel="stylesheet" type="text/css"
-          href="{{ url('static', filename='style.css') }}" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet"> 
+    <title>exTempore</title>
 </head>
 <body>
+    <div class="main-header">
+        <div class="logo">
+            <img src="static/logo.png" />
+            <div class="extempore"><i>Ex Tempore</i></div>
+        </div>
+        <div class="container">
+            <div class="header-element">
+                <a href="#">Все курсы</a>
+            </div>
+            <div class="header-element">
+                    <a href="#">Hello, world</a>
+            </div>
+            <div class="header-element">
+                <a href="#">Мой профиль</a>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="course-container programming">
+            <img src="static/python.png" />
+            <button>Начать</button>
+            <div class="text-container">
+                <div class="header">
+                    Основы языка программирования Python 3
+                </div>
+                <hr>
+                <div class="description">
+                    Язык программирования Python в последнее время все чаще используется для анализа данных, как в науке, так и коммерческой сфере. Этому способствует простота языка, а также большое разнообразие открытых библиотек. Данный курс поможет вам установить интерпретатор, освоить синтаксические основы языка, а также написать вашу первую программу.
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
-{{ records }}
+        <div class="course-container programming">
+            <img src="static/R.png" style="width: 180px;"/>
+            <button>Начать</button>
+            <div class="text-container">
+                <div class="header">
+                    Введение в язык программирования R
+                </div>
+                <hr>
+                <div class="description">
+                    Язык R используется специалистами по обработке и анализу данных и программистами для статистический вычислений. R является одной из самых быстро развивающихся технологий среди моих коллег, использующих C#. Знакомство с R может оказаться ценным пополнением в вашем арсенале технических навыков.
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
+        <div class="course-container statistics">
+            <img src="static/statistics.png"/>
+            <button>Начать</button>
+            <div class="text-container">
+                <div class="header">
+                    Основы математической статистики для аналитиков
+                </div>
+                <hr>
+                <div class="description">
+                    В рамках данного курса вы научитесь: визуализировать данные; на основе наблюдаемых данных строить оценки неизвестных параметров распределения; узнаете, какие оценки являются хорошими; научитесь проверять статистические гипотезы; сравнивать параметры распределений, выявлять наличие и вид зависимостей  между случайными величинами по данным.
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="course-container ml">
+            <img src="static/ml.png">
+            <button>Начать</button>
+            <div class="text-container">
+                <div class="header">
+                    Теоретические основы машинного обучения
+                </div>
+                <hr>
+                <div class="description">
+                    Технология машинного обучения на основе анализа данных берёт начало в 1950 году. За прошедшие десятилетий общий принцип не изменился. Зато благодаря взрывному росту вычислительных мощностей многократно усложнились закономерности и прогнозы, создаваемые ими, и расширился круг задач, решаемых с использованием машинного обучения.
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="main-footer"></div>
 </body>
 </html>
