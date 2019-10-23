@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ url('static', filename='css/index.css') }}">
+    <link href="//fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet">
     <title>exTempore</title>
 </head>
 <body>
     <div class="main-header">
         <div class="logo">
-            <img src="static/logo.png" />
+            <img src="{{ url('static', filename='img/logo.png') }}" />
             <div class="extempore"><i>Ex Tempore</i></div>
         </div>
         <div class="container">
@@ -27,7 +27,7 @@
     </div>
     <div class="content-wrapper">
         <div class="course-container programming">
-            <img src="static/python.png" />
+            <img src="{{ url('static', filename='img/python.png') }}" />
             <button>Начать</button>
             <div class="text-container">
                 <div class="header">
@@ -42,7 +42,7 @@
         </div>
 
         <div class="course-container programming">
-            <img src="static/R.png" style="width: 180px;"/>
+            <img src="{{ url('static', filename='img/R.png') }}" style="width: 180px;"/>
             <button>Начать</button>
             <div class="text-container">
                 <div class="header">
@@ -57,7 +57,7 @@
         </div>
 
         <div class="course-container statistics">
-            <img src="static/statistics.png"/>
+            <img src="{{ url('static', filename='img/statistics.png') }}"/>
             <button>Начать</button>
             <div class="text-container">
                 <div class="header">
@@ -72,7 +72,7 @@
         </div>
 
         <div class="course-container ml">
-            <img src="static/ml.png">
+            <img src="{{ url('static', filename='img/ml.png') }}">
             <button>Начать</button>
             <div class="text-container">
                 <div class="header">
