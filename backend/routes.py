@@ -14,6 +14,6 @@ def setup_routes(app):
 
 
 def setup_static_routes(app):
-    app.router.add_static('/static/',
+    app.router.add_static('/app/static/' if os.getenv('PRODUCTION') else '/static/',
                           path=PROJECT_ROOT / 'static',
                           name='static')
