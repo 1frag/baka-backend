@@ -10,3 +10,8 @@ async def index(request):
         records = await cursor.fetchall()
         # questions = [dict(q) for q in records]
         return {'records': records}
+
+
+@aiohttp_jinja2.template('content.html')
+async def content(request):
+    return {}

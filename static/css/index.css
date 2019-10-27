@@ -1,0 +1,193 @@
+body
+{
+    font-family: 'Roboto', 'Cabin', sans-serif;
+}
+
+.main-header
+{
+    width: 1000px;
+    height: 100px;
+
+    margin: 0 auto;
+
+    background-color: #a305ff;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+    border-radius: 30px;
+}
+
+.main-header .logo
+{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: white;
+    float: left;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main-header .logo img 
+{
+    width: 90px;
+    height: 90px;
+    margin-top: -5px;
+}
+
+.main-header .logo .extempore
+{
+    display: block;
+    width: 110px;
+    float: right;  
+    font-size: 16pt; 
+    padding-top: 15px;
+}
+
+.main-header .container 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+
+    width: 95%;
+    height: 100%;
+}
+
+.main-header .header-element
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    width: 200px;
+    height: 60%;
+    
+    margin-right: 10px;
+    padding: auto;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.main-header .header-element a
+{
+    display: block;
+    margin: 0 auto;
+
+    font-size: 16pt;
+    text-decoration: none;
+    color: black;
+}
+
+.course-container
+{
+    width: 800px;
+    height: 220px;
+
+    margin: 80px auto;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+    border-radius: 25px;
+}
+
+.programming
+{
+    background-color: #47bbff;
+}
+
+.statistics
+{
+    background-color: #ff641f;
+}
+
+.ml 
+{
+    background-color: #bc05ff;
+}
+
+.course-container img 
+{
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: -50px;
+    margin-top: -40px;
+}
+
+.course-container .text-container 
+{
+    padding-top: 5px;
+    color: white;
+    max-width: 100%;
+    margin-left: 22%;
+}
+
+.course-container .text-container .header
+{
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+.course-container .text-container .description
+{
+    text-align: justify;
+    width: 80%;
+}
+
+.course-container button
+{
+    float: right;
+    font-size: 18pt;
+    margin-right: 15px;
+    margin-top: 155px;
+
+    color: rgba(0, 0, 0, 0.9);
+    /* color: white; */
+    background-color: lemonchiffon;
+    padding: 5px 10px;
+
+    border: 1px solid gray;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.clearfix
+{
+    clear: both;
+    content: "";
+}
+
+.course-content
+{
+    width: 800px;
+    margin: 40px auto;
+
+    border-radius: 40px;
+    box-shadow: 0 0 15px 5px rgba(14, 112, 223, 0.5);
+
+    padding: 10px 40px;
+}
+
+.course-content ol
+{
+    line-height: 1.8em;
+    font-size: 14pt;
+}
+
+.course-content button
+{
+    font-size: 16pt;
+    margin-left: 46%;
+    margin-bottom: 15px;
+}
+
+/*
+orange color    #ff641f
+red color       #eb1847
+purple color    #bc05ff
+blue color      #4b44eb
+sky-blue color  #47bbff
+*/
