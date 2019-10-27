@@ -1,29 +1,26 @@
-import asyncio
-
-import sqlalchemy as sa
-from backend.utils import get_engine
-
-metadata = sa.MetaData()
+relations = []
 
 
-async def create_table(engine):
-    async with engine.acquire() as conn:
-        await conn.execute('drop table if exists e_user;')
-        await conn.execute('''
-            CREATE TABLE e_user
-            (
-                id         int8        not null,
-                name       varchar(64) not null,
-                started_at date        default now(),
-                PRIMARY KEY (id)
-            );
-        ''')
+def sql_ops(cls):
 
+    async def go(engine, ops):
+        async with engine.acquire() as conn:
+            for name_fun in ops:
+                op = getattr(cls, name_fun)()
+                await conn.execute(op)
+                print(f'{name_fun} in {cls.__name__} done')
 
-async def go():
-    async with get_engine() as engine:
-        await create_table(engine)
+    async def up(engine):
+        await go(engine, cls.upgrade)
 
+    async def down(engine):
+        await go(engine, cls.downgrade)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(go())
+    class Wrapper(cls):
+        pass
+
+    Wrapper.up = up
+    Wrapper.down = down
+    relations.append(Wrapper)
+
+    return Wrapper
